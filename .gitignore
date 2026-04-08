@@ -1,0 +1,65 @@
+# MolForge AI — .gitignore
+
+# Environment files — NEVER commit these
+.env
+backend/.env
+frontend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ChromaDB (can be large — regenerate from pipeline)
+chroma_db/
+backend/chroma_db/
+
+# Job results (ephemeral — not source code)
+jobs/
+backend/jobs/
+*.json.tmp
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# DeepChem / TDC model cache (large binaries)
+tdc_data/
+deepchem_models/
+*.pkl
+*.pt
+*.ckpt
+
+# Reports (generated output)
+backend/reports/*.pdf
+*.pdf
+
+# Logs
+*.log
+logs/
