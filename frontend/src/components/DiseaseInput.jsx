@@ -113,7 +113,7 @@ export default function DiseaseInput({ onSubmit, onLoadHistory }) {
             </motion.div>
 
             <motion.p className="text-lg text-slate-400 leading-relaxed mb-9 max-w-lg" variants={itemVariants}>
-              Eight AI agents. Eleven biomedical APIs. One autonomous pipeline that takes you from disease to drug candidate.
+              Nine AI agents. Eleven biomedical APIs. One autonomous pipeline that takes you from disease to drug candidate.
             </motion.p>
 
             {/* Search */}
